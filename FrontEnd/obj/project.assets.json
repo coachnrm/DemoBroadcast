@@ -707,6 +707,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     },
     "net9.0/browser-wasm": {
@@ -1414,6 +1424,16 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -2661,6 +2681,11 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2672,6 +2697,7 @@
       "Microsoft.NET.ILLink.Tasks >= 9.0.0",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.0",
       "NetcodeHub.Packages.Extensions.LocalStorage >= 1.0.0",
+      "Shared >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.8.0"
     ]
   },
@@ -2700,7 +2726,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/home/Desktop/DemoBroadcast/Shared/Shared.csproj": {
+              "projectPath": "/Users/home/Desktop/DemoBroadcast/Shared/Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -169,3 +169,6 @@
 /Users/home/Desktop/DemoBroadcast/BackEnd/obj/Debug/net9.0/BackEnd.pdb
 /Users/home/Desktop/DemoBroadcast/BackEnd/obj/Debug/net9.0/BackEnd.genruntimeconfig.cache
 /Users/home/Desktop/DemoBroadcast/BackEnd/obj/Debug/net9.0/ref/BackEnd.dll
+/Users/home/Desktop/DemoBroadcast/BackEnd/obj/Debug/net9.0/BackEnd.sourcelink.json
+/Users/home/Desktop/DemoBroadcast/BackEnd/bin/Debug/net9.0/Shared.dll
+/Users/home/Desktop/DemoBroadcast/BackEnd/bin/Debug/net9.0/Shared.pdb

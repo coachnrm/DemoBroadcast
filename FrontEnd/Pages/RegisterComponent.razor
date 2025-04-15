@@ -1,0 +1,29 @@
+﻿@page "/register"
+@using Shared.DTO
+@inject HttpClient client
+@inject NavigationManager NavManager 
+
+<div class="alert alert-info">@Message</div>
+<EditForm Model="Register" Enhance OnSubmit="RegisterAsync">
+    <input placeholder="Name" class="form-control mb-2" @bind="Register.Name" />
+    <input placeholder="UserName" class="form-control mb-2" @bind="Register.UserName" />
+    <input placeholder="Email" class="form-control mb-2" @bind="Register.Email" />
+    <input placeholder="Password" class="form-control mb-2" @bind="Register.Password" />
+    <button class="btn btn-success mb-5" type="submit">Register</button>
+</EditForm>
+
+@code {
+    string Message = string.Empty;
+    public RegisterDTO Register = new ();
+    async Task RegisterAsync() 
+    {
+        Message = "";
+        var result = await client.PostAsJsonAsync("authentication/register", Register);
+        if (result.IsSuccessStatusCode)
+            NavManager.NavigateTo("/login");
+        else 
+            Message = "Invalid email / password";
+        return;
+    }
+}
+   

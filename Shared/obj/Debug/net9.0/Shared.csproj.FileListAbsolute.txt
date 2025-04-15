@@ -9,3 +9,4 @@
 /Users/home/Desktop/DemoBroadcast/Shared/obj/Debug/net9.0/refint/Shared.dll
 /Users/home/Desktop/DemoBroadcast/Shared/obj/Debug/net9.0/Shared.pdb
 /Users/home/Desktop/DemoBroadcast/Shared/obj/Debug/net9.0/ref/Shared.dll
+/Users/home/Desktop/DemoBroadcast/Shared/obj/Debug/net9.0/Shared.sourcelink.json

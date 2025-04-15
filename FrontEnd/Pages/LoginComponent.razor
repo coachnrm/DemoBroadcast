@@ -1,0 +1,48 @@
+﻿@page "/login"
+@using FrontEnd.Services
+@using Microsoft.AspNetCore.Components.Authorization
+@using NetcodeHub.Packages.Extensions.LocalStorage
+@using Shared.DTO
+@inject ILocalStorageService localStorageService
+@inject NavigationManager NavManager
+@inject AuthenticationStateProvider authStateProvider 
+@inject HttpClient client
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="alert alert-info">@Message</div>
+            <EditForm Model="Login" Enhance OnSubmit="LoginAsync">
+                <input placeholder="Email Address" class="form-control" @bind="Login.Email" />
+                <input placeholder="Password" class="form-control" @bind="Login.Password" />
+                <button class="btn btn-success" type="submit">Login</button>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    string Message = string.Empty;
+    public LoginDTO Login = new();
+    async Task LoginAsync()
+    {
+        Message = "";
+        var result = await client.PostAsJsonAsync("authentication/login", Login);
+        if (result.IsSuccessStatusCode)
+        {
+            string token = await result.Content.ReadAsStringAsync();
+            if (!string.IsNullOrEmpty(token))
+            {
+                await localStorageService.SaveAsEncryptedStringAsync("token", token);
+                var customAuthState = (CustomAuthState)authStateProvider;
+                customAuthState.NotifyAuthStateChanged();
+                NavManager.NavigateTo("/", true);
+            }
+        }
+        else 
+        {
+            Message = "Error occurred";
+            return;
+        }
+    }
+}

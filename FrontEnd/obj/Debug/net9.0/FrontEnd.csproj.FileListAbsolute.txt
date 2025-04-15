@@ -6,8 +6,6 @@
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/dotnet.native.p4lwlf2bu1.wasm
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/dotnet.runtime.o8gq1i8bk6.js
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/dotnet.runtime.js.map
-/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.9lonjb7ukb.pdb
-/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.ewxkrf5r17.wasm
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/icudt_CJK.tjcz0u77k5.dat
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/icudt_EFIGS.tptq2av103.dat
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/icudt_no_CJK.lfu7j35m59.dat
@@ -259,7 +257,6 @@
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/NetcodeHub.Packages.Extensions.LocalStorage.1bkocjkxyl.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.ComponentModel.Primitives.ze7l9au5js.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.IO.FileSystem.Primitives.n5yu5rrxku.wasm.gz
-/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.ewxkrf5r17.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/dotnet.native.hmanx9razn.js.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Net.WebSockets.Client.rvu8vmr0jl.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Dynamic.Runtime.88385ealgl.wasm.gz
@@ -335,7 +332,6 @@
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Linq.Queryable.ks647opqhs.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/dotnet.runtime.o8gq1i8bk6.js.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Text.Encoding.CodePages.vc05ey5wlh.wasm.gz
-/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.9lonjb7ukb.pdb.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Private.Xml.Linq.y9tg1dl3wl.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Net.dtes30ao5n.wasm.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/System.Net.Quic.zj1198aj69.wasm.gz
@@ -1144,9 +1140,6 @@
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/1d32bknrg1-tjcz0u77k5.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/dq243dml65-tptq2av103.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/qjga09pmux-lfu7j35m59.gz
-/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/66tasnwnlq-ewxkrf5r17.gz
-/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/jgqptv09ng-9lonjb7ukb.gz
-/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/da4165w0gq-p9g4lf8x4z.gz
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/staticwebassets.build.json
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/staticwebassets.development.json
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -1161,3 +1154,11 @@
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/refint/FrontEnd.dll
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/FrontEnd.pdb
 /Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/ref/FrontEnd.dll
+/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.prmalobf4y.pdb
+/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.kog3w5x9fv.wasm
+/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.kog3w5x9fv.wasm.gz
+/Users/home/Desktop/DemoBroadcast/FrontEnd/bin/Debug/net9.0/wwwroot/_framework/FrontEnd.prmalobf4y.pdb.gz
+/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/FrontEnd.sourcelink.json
+/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/66tasnwnlq-kog3w5x9fv.gz
+/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/jgqptv09ng-prmalobf4y.gz
+/Users/home/Desktop/DemoBroadcast/FrontEnd/obj/Debug/net9.0/compressed/da4165w0gq-twwcb6y4ri.gz

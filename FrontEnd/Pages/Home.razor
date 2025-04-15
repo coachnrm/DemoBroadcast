@@ -1,7 +1,33 @@
 ﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@using FrontEnd.Services
+@using NetcodeHub.Packages.Extensions.LocalStorage
+@inject BroadcastService broadcastService
+@inject NavigationManager NavManager
+@inject ILocalStorageService localStorageService
 
-<PageTitle>Home</PageTitle>
+<AuthorizeView>
+    <Authorized>
+        <h1>Hello, you are authorized!</h1>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Hello, you are not authorized!</h1>
+    </NotAuthorized>
+</AuthorizeView>
 
-<h1>Hello, world!</h1>
+<p>@Message</p>
 
-Welcome to your new app.
+@code {
+    [CascadingParameter] public Task<AuthenticationState> AuthState {get; set;}
+    string Message = string.Empty;
+
+    protected async override Task OnInitilizedAsync()
+    {
+        var user = (await AuthState!).User;
+        if (!user.Identity!.IsAuthenticated)
+        {
+            NavManager.NavigateTo("/login");
+            return;
+        }
+    }
+}    

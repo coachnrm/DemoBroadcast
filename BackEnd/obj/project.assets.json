@@ -1409,6 +1409,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -4032,6 +4042,11 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4041,6 +4056,7 @@
       "Microsoft.AspNetCore.OpenApi >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
+      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 8.1.1"
     ]
   },
@@ -4069,7 +4085,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/home/Desktop/DemoBroadcast/Shared/Shared.csproj": {
+              "projectPath": "/Users/home/Desktop/DemoBroadcast/Shared/Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
