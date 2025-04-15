@@ -4,6 +4,7 @@ using BackEnd.Hubs;
 using BackEnd.Model;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -59,6 +60,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization();
 builder.Services.AddSignalR();
 
+builder.Services.AddResponseCompression(opts =>
+{
+    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+        new[] { "application/octet-stream" });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -96,6 +103,7 @@ app.MapGet("/weatherforecast", () =>
 
 app.UseAuthentication().UseAuthorization();
 app.MapHub<BroadcastHub>("/broadcast");
+app.MapFallbackToFile("index.html");
 app.MapControllers();
 app.Run();
 
