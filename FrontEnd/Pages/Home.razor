@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components.Authorization
 @using FrontEnd.Services
+@using Microsoft.AspNetCore.SignalR.Client
 @using NetcodeHub.Packages.Extensions.LocalStorage
 @inject BroadcastService broadcastService
 @inject NavigationManager NavManager
@@ -21,7 +22,7 @@
     [CascadingParameter] public Task<AuthenticationState> AuthState {get; set;}
     string Message = string.Empty;
 
-    protected async override Task OnInitilizedAsync()
+    protected async override Task OnInitializedAsync()
     {
         var user = (await AuthState!).User;
         if (!user.Identity!.IsAuthenticated)
@@ -29,5 +30,19 @@
             NavManager.NavigateTo("/login");
             return;
         }
+        try 
+        {
+            if (broadcastService.hubConnection!.State != HubConnectionState.Connected)
+                await broadcastService.InitializeAsync("http://localhost:5208/broadcast");   
+        }
+        catch
+        {
+            await broadcastService.InitializeAsync("http://localhost:5208/broadcast");
+        }
+        broadcastService.SubscribeMessageHandler((message) => 
+        {
+            Message += $", {message}";
+            InvokeAsync(StateHasChanged);
+        });
     }
 }    
